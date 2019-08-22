@@ -1,0 +1,42 @@
+<!--page register-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <H3>INSCRIPTION</H3>
+
+            <!--messages d'erreur-->
+            <div class="content">
+                <ol type="1">
+                    {{#each errors}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ol>
+            </div>
+
+            <form action="/user/register" method="POST" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nom</label>
+                    <input type="text" class="form-control" name="name" value={{data.name}}>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Adresse email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        name="email" value={{data.email}}>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Mot de passe</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" name="password" value="{{data.password}}">
+                </div>
+
+                </br>
+
+                <button type="submit" class="btn btn-primary">Enregistrer</button>
+                <a href="/"><button type="button" class="btn btn-secondary">Annuler</button></a>
+            </form>
+        </div>
+    </div>
+</div>

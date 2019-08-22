@@ -1,0 +1,431 @@
+/* DOCUMENT INFORMATION
+        - document : website photo
+        - version : 1.0.0
+        - author : S. Teillet
+
+ CSS DIRECTORY
+        1.  GLOBAL
+        2.  NAVBAR
+        3.  CAROUSEL
+        4.  JUMBOTRON
+        5.  EMOJI
+        6.  PORTRAIT
+        7.  MENU
+        8.  ROAD TRIP
+            modals popup
+            map popup
+        9.  PORTFOLIO & BLOG
+            dash
+            add.handlebars
+        10. TABLEAU ADMIN
+        11. SUPPRIMER SON COMPTE 
+        12. FOOTER
+        13. CONNECT
+        14. MEDIA QUERIES
+*/
+
+
+/* 1 - DASHBOARD */
+.pt-3-half {
+    padding-top: 1.4rem;
+    }
+
+
+/* 1 - GLOBAL */
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: #222;
+}
+
+p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 110%;
+}
+
+.bonjour {
+    font-family: 'Indie Flower', cursive;
+    font-size: 120%;
+    color: rgb(231, 229, 207);
+}
+
+/* 2 - NAVBAR */
+.navbar-nav {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+/* 3 - CAROUSEL */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+}
+
+.carousel-caption h3 {
+    font-family: 'Kalam', 'Arial', sans-serif;
+    font-size: 180%;
+    font-weight: 400;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: 1rem;
+}
+
+.btn-primary {
+    background-color: #3ca860;
+    border: 1px solid #3ca860;
+}
+
+.btn-primary:hover {
+    background-color: #149940;
+    border: 1px solid #149940;
+}
+
+/* 4 - JUMBOTRON */
+.jumbotron {
+    padding: 3rem;
+    border-radius: 0;
+}
+
+.lead {
+    font-family: 'Indie Flower', cursive;
+    font-size: 130%;
+}
+
+/* 5 - EMOJI */
+.fa-paw {
+    color: #e7e0d5;
+}
+
+.fun {
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: #fff;
+}
+
+.gif {
+    max-width: 100%;
+}
+
+/* 6 - PORTRAIT */
+.padding-portrait {
+    padding: 2rem;
+}
+
+.modal-body {
+    font-family: 'Indie Flower', cursive;
+    font-size: 100%;
+    text-align: left;
+    list-style-type: square;
+}
+
+.modal-ul {
+    background-color: #fff;
+    list-style-type: disclosure-closed;
+}
+
+/* 7 - MENU */
+.card-imd-top {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fa-arrow-alt-circle-up {
+    color: #3f3f3f;
+    font-size: 3em;
+    margin: 1rem;
+}
+
+.fa-arrow-alt-circle-up:hover {
+    color: #5e5e5e;
+    font-size: 3em;
+    margin: 1rem;
+}
+
+.fa-camera {
+    color: #7e0909;
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.fa-map-marked-alt {
+    color: #9c682d;
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.fa-blog {
+    color: #d35806;
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.card1 a:hover {
+    background-color: #7e0909;
+}
+
+.card2 button:hover {
+    background-color: #9c682d;
+}
+
+.card3 a:hover {
+    background-color: #d35806;
+}
+
+/* 8 - ROAD TRIP */
+.btn-dark {
+    margin: 10px;
+}
+
+/* modals popup */
+.modal-content img {
+    width: 498px; 
+    height: 350px;
+}
+
+.modal-header h5 {
+    width: 100%; 
+    font-size: 30px;
+    font-weight: 600; 
+    color: #4765AB;
+}
+
+.modal-header i {
+    font-size: 17px;
+    color: #4765AB;
+}
+
+.modal-header p {
+    display: block;
+    font-size: 20px;
+    color: #000;
+}
+
+.modal-body i {
+    margin-right: 10px;
+    color: #4765AB;
+}
+
+/* map popup*/
+#mapid { 
+    margin: 10px;
+}
+
+.leaflet-popup-content-wrapper {
+    border-radius: 5;
+    background: rgb(90, 90, 90);
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
+.leaflet-popup-content {
+    width: 260px;
+    margin: 10px;
+}
+
+.leaflet-popup-tip {
+    background: rgb(90, 90, 90);
+}
+
+.leaflet-popup-close-button {
+    display: none;
+}
+
+/* 9 - PORTFOLIO & BLOG*/
+.btn-group {
+    margin: 10px;
+}
+
+p .card-text{
+    font-size: 80%;
+ }
+
+ .padding-portfolio {
+    padding-top: 2rem;
+}
+
+.padding-blog {
+    padding-top: 2rem;
+}
+
+/*  dash */
+.ui.container {
+    margin: auto!important;
+}
+
+.ui.card.actu {
+    height: 25vh;
+}
+
+#dash {
+    margin: auto;
+    width:  auto;
+    height: 12vh;
+    overflow: hidden;
+}
+
+/*  buttons articles */
+.fa-edit {
+    color: #3f3f3f;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.fa-edit:hover {
+    color: #398ccf;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.fa-trash {
+    color: #3f3f3f;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.fa-trash:hover {
+    color: #cf3939;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+/*  add.handlebars */
+.container {
+    display:table;
+    width: 50rem;
+    padding: 15px;
+}
+
+/* 10 - TABLEAU ADMIN */
+
+/* 11 - TABLEAU ADMIN */
+.deleteAccount {
+    padding: 15px 15px 0 15px;
+}
+
+/* 12 - FOOTER */
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: #d5d5d5;
+}
+
+hr.light-100 {
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+/* 13 - CONNECT */
+.social a {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-facebook-messenger {
+    color: #0084ff;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-facebook:hover,
+.fa-facebook-messenger:hover,
+.fa-instagram:hover {
+    color: #d5d5d5;
+}
+
+/* 14 - MEDIA QUERIES */
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        top: 45%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 350%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: 1.2rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+
+    .display-4 {
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 40%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 250%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 110%;
+    }
+
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .display-4 {
+        font-size: 160%;
+    }
+
+    .modal-content img {
+        width: 100%; 
+        height: 270px;
+    }
+
+}
+
+

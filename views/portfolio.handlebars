@@ -1,0 +1,52 @@
+<!--PORTFOLIO-->
+
+<div class="container-fluid padding-portfolio">
+    <div class="row padding">
+
+        {{#if user}}
+
+        {{#each posts}}
+
+        <div class="col-md-2">
+            <div class="card">
+                <img src="{{image}}" class="card-img-top" alt="image">
+                <div class="card-body" id="dash">
+                    <a href="/articles/{{_id}}">
+                        <h5 class="card-title">{{title}}</h5>
+                    </a>
+                    <p class="card-text">{{{content}}}</p>
+                    <p class="card-text">{{{information}}} </br></br>Article posté le
+                        {{moment createDate format="DD/MM/YYYY"}}</p>
+                </div>
+
+                {{#if ../admin}}
+                <!--../ pour sortir de la boucle-->
+
+                <div class="btn-group">
+                    <a href="/articleEdit/{{_id}}"><button type="button"
+                            class="btn btn-info btn-rounded btn-sm my-0">Modifier</button></a>
+                    &ensp;
+                    <a href="/article-delete/{{_id}}"><button type="button"
+                            class="btn btn-danger btn-rounded btn-sm my-0">Supprimer</button></a>
+                </div>
+
+                {{/if}}
+
+            </div>
+        </div>
+
+        {{/each}}
+
+    </div>
+
+    <div class="container-fluid padding-backup">
+        <div class="row text-center">
+            <div class="col-12">
+                <a href="/portfolio"><i class="fas fa-arrow-alt-circle-up"></i></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{{/if}}

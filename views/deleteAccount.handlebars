@@ -1,0 +1,19 @@
+<!--supprimer son profil en tant qu'utilisateur-->
+
+<div class="deleteAccount">
+    <div class="card text-center border-danger mb-3">
+        <div class="card-header">
+            Supprimer mon compte utilisateur !
+        </div>
+        <div class="card-body">
+            <h5 class="card-title-1">Vous êtes sur le point de supprimer votre compte utilisateur, <strong>Confirmer</strong> pour valider
+                votre choix ou <strong>Annuler</strong> pour revenir à l'accueil.</h5>
+            <a href="/user-delete/{{sess.userId}}"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Confirmer</button></a>
+            <a href="/"><button type="button" class="btn btn-primary btn-rounded btn-sm my-0">Annuler</button></a>
+        </div>
+        <div class="card-footer text-muted">
+            <i class="fas fa-user-times"></i>
+        </div>
+    </div>
+</div>

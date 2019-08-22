@@ -1,0 +1,16 @@
+<!--BLOG-->
+<!--affiche l'article dans une nouvelle page-->
+
+<section class="section">
+
+    <div class="container">
+
+        <img src="{{info.image}}" alt="image">
+        <h1 class="title">{{info.title}}</h1>
+        <p>{{{info.content}}}</p>
+        <p></br>Article posté le {{moment createDate format="DD/MM/YYYY"}}</p>
+        <a href="/blog"><button type="button" class="btn btn-primary btn-sm">blog</button></a>
+
+    </div>
+
+</section>

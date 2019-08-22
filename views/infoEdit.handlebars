@@ -1,0 +1,30 @@
+<!--BLOG-->
+<!--page création d'une info blog-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <H3>ESPACE BLOG</H3>
+      <form action="/article-edit/{{info.id}}" method="POST" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <label for="exampleInputEmail1">Titre</label>
+          <input type="text" class="form-control" name="title" value="{{info.title}}">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="content">{{info.content}}</textarea>
+          <script>
+            CKEDITOR.replace('content');
+          </script>
+        </div>
+
+        <div class="form-group">
+          <input type="file" name="image" id="" class="input-group" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Publier</button>
+      </form>
+    </div>
+  </div>
+</div>

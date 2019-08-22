@@ -1,0 +1,42 @@
+<!--dashboard-->
+
+<div class="container-fluid">
+
+  <div class="card">
+    <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Tableau Admin</h3>
+    <div class="card-body">
+      <div id="table" class="table-editable">
+        <table class="table table-bordered table-responsive-md table-striped text-center">
+          <thead>
+            <tr>
+              <th class="text-center">Nom utilisateur</th>
+              <th class="text-center">Adresse mail</th>
+              <th class="text-center">Password</th>
+              <th class="text-center">N°ID</th>
+              <th class="text-center">Supprimer</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            {{#each dbUsers}}
+
+            <tr>
+              <td class="pt-3-half" contenteditable="true">{{name}}</td>
+              <td class="pt-3-half" contenteditable="true">{{email}}</td>
+              <td class="pt-3-half" contenteditable="true">{{password}}</td>
+              <td class="pt-3-half" contenteditable="true">{{id}}</td>
+              <td>
+                <a href="/user-delete/{{_id}}"><button type="button"
+                    class="btn btn-danger btn-rounded btn-sm my-0">Valider</button></a>
+              </td>
+            </tr>
+
+            {{/each}}
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>

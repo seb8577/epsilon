@@ -1,0 +1,18 @@
+<!--PORTFOLIO-->
+<!--affiche l'article dans une nouvelle page-->
+
+<section class="section">
+
+    <div class="container">
+
+        <img src="{{article.image}}" alt="image" class="img-responsive center-block">
+        <h1 class="title">{{article.title}}</h1>
+        <p>{{{article.content}}}</p>
+        <p></br>Article posté le {{moment createDate format="DD/MM/YYYY"}}</p>
+        <p>{{article.author}}</p>
+        <a href="/portfolio"><button type="button" class="btn btn-primary btn-sm">portfolio</button></a>
+
+    </div>
+
+</section>
+
