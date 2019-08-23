@@ -32,8 +32,6 @@ const aboutController               = require('./controllers/about')
 const roadTripTznController         = require('./controllers/roadTripTzn')
 const roadTripAfsController         = require('./controllers/roadTripAfs')
 
-const deleteAccountController       = require('./controllers/deleteAccount')
-
 const userCreate                    = require('./controllers/userCreate')
 const userRegister                  = require('./controllers/userRegister')
 const userLogin                     = require('./controllers/userLogin')
@@ -42,6 +40,7 @@ const userLogout                    = require('./controllers/userLogout')
 const admin                         = require('./middleware/admin')
 const dashboardController           = require('./controllers/dashboard')
 const userDeleteController          = require('./controllers/userDelete')
+const deleteAccountController       = require('./controllers/deleteAccount')
 
 
 

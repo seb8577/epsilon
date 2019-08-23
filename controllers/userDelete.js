@@ -1,4 +1,4 @@
-// supprime un utilisateur de la base de données
+// supprimer un utilisateur de la base de données en tant qu'admin
 
 const express = require("express");
 const app = express();
@@ -10,10 +10,7 @@ app.get("/:id", (req, res) => {
        { useFindAndModify: false },
        function (err) {
            if (!err) {
-               req.session.destroy(() => {
-                   res.clearCookie("biscuit");
-                   res.redirect('/')
-               })
+                   res.redirect('/dashboard')
            } else {
                res.redirect('/');
            }
