@@ -306,17 +306,17 @@ p .card-text{
 
 /*  add.handlebars */
 .container {
-    display:table;
+    display: table;
     width: 50rem;
     padding: 15px;
 }
 
 /* 10 - TABLEAU ADMIN */
-
-/* 11 - TABLEAU ADMIN */
 .deleteAccount {
     padding: 15px 15px 0 15px;
 }
+
+/* 11 - SUPPRIMER SON COMPTE */
 
 /* 12 - FOOTER */
 footer {
@@ -368,7 +368,8 @@ hr.light-100 {
 }
 
 /* 14 - MEDIA QUERIES */
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+}
 
 @media (max-width: 768px) {
     .carousel-caption {
