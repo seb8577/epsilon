@@ -3,16 +3,19 @@
 
 <section class="section">
 
-    <div class="container">
+    <div class="container" style="margin: 0 auto; justify-content: center;">
+        <div class="block col-xs-6">
 
-        <img src="{{article.image}}" alt="image" class="card-img img-responsive center-block">
-        <h1 class="title">{{article.title}}</h1>
-        <p>{{{article.content}}}</p>
-        <p></br>Article posté le {{moment createDate format="DD/MM/YYYY"}}</p>
-        <p>{{article.author}}</p>
-        <a href="/portfolio"><button type="button" class="btn btn-primary btn-sm">portfolio</button></a>
+            <div class="card">
+                <img src="{{article.image}}" class="card-img img-responsive" alt="image">
+                <h1 class="title">{{article.title}}</h1>
+                <p>{{{article.content}}}</p>
+                <p></br>Article posté le {{moment createDate format="DD/MM/YYYY"}}</p>
+                <p>{{article.author}}</p>
+                <a href="/portfolio"><button type="button" class="btn btn-primary btn-sm">portfolio</button></a>
+            </div>
 
+        </div>
     </div>
 
 </section>
-

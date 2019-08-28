@@ -3,14 +3,17 @@
 
 <section class="section">
 
-    <div class="container">
+    <div class="container" style="margin: 0 auto; justify-content: center;">
+        <div class="block col-xs-6">
 
-        <img src="{{info.image}}" alt="image">
-        <h1 class="title">{{info.title}}</h1>
-        <p>{{{info.content}}}</p>
-        <p></br>Article posté le {{moment createDate format="DD/MM/YYYY"}}</p>
-        <a href="/blog"><button type="button" class="btn btn-primary btn-sm">blog</button></a>
+            <div class="card">
+                <img src="{{info.image}}" class="card-img img-responsive" alt="image">
+                <h1 class="title">{{info.title}}</h1>
+                <p>{{{info.content}}}</p>
+                <p></br>Article posté le {{moment createDate format="DD/MM/YYYY"}}</p>
+                <a href="/blog"><button type="button" class="btn btn-primary btn-sm">blog</button></a>
 
-    </div>
+            </div>
+        </div>
 
 </section>

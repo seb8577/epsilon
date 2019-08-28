@@ -368,9 +368,6 @@ hr.light-100 {
 }
 
 /* 14 - MEDIA QUERIES */
-@media (max-width: 992px) {
-}
-
 @media (max-width: 768px) {
     .carousel-caption {
         top: 45%;
@@ -425,6 +422,18 @@ hr.light-100 {
     .modal-content img {
         width: 100%; 
         height: 270px;
+    }
+
+    /* portfolio-nouvelle page */
+
+    .card-img.img-responsive {
+        max-width: auto;
+        max-height: auto;
+    }
+
+    .card {
+        max-width: 20rem;
+        max-height: auto;
     }
 
 }
