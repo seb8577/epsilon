@@ -42,13 +42,27 @@ const dashboardController           = require('./controllers/dashboard')
 const userDeleteController          = require('./controllers/userDelete')
 const deleteAccountController       = require('./controllers/deleteAccount')
 
+// mongo atlas
 
+,  db = "mongodb+srv://seb:123@cluster0-qvnnw.mongodb.net/test?retryWrites=true&w=majority"
+
+mongoose
+    // .connect(db , { useNewUrlParser: true })
+    .connect(db, {
+        useCreateIndex: true,
+        useNewUrlParser: true
+    })
+    .then(() => console.log('Connecter a MongoDB Cloud'))
+    .catch(err => console.log(err));
 
 // application pour express
 const app = express();
-mongoose.connect('mongodb://localhost:27017/blog', {    // mongoose se connecte à mongodb
-    useNewUrlParser: true
-});
+// mongoose.connect('mongodb://localhost:27017/blog', {    // mongoose se connecte à mongodb
+//     useNewUrlParser: true
+// });
+
+
+
 const mongoStore = MongoStore(expressSession)
 
 app.use(connectFlash())
