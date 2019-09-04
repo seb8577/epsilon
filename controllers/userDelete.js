@@ -10,8 +10,11 @@ app.get("/:id", (req, res) => {
        { useFindAndModify: false },
        function (err) {
            if (!err) {
-                   res.redirect('/dashboard')
+               console.log("1");
+               res.clearCookie("biscuit");
+                res.redirect('/')
            } else {
+            console.log("2");
                res.redirect('/');
            }
        });
