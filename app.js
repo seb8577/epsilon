@@ -130,7 +130,7 @@ app.use("/info/add2", auth)
 app.use("*", admin)
 
 // dirige vers la page dashboard
-app.get("/dashboard", dashboardController)
+app.get("/dashboard", admin, dashboardController)
 
 
 

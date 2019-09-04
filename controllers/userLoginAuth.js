@@ -22,6 +22,7 @@ module.exports = (req, res) => {
 
                     req.session.userId = user._id
                     req.session.name = user.name
+                    req.session.admin = user.admin
                     
                     res.redirect('/')
                 }

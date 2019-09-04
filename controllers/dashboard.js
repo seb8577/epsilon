@@ -9,8 +9,10 @@ module.exports      = async (req, res) => {
         dbSeb       = await user.find({ name: 'seb' }),
         sess        = req.session
 
-    if (req.session.userId) {
-
+    if (!sess.admin === true) {
+        res.redirect('/')
+    } else {
+    
         console.log(sess);
 
         return res.render(
